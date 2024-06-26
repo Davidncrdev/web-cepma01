@@ -1,0 +1,44 @@
+---
+import experiences from "../collections/experiences.json";
+import AboutExperience from "../components/about-experience.astro";
+import PageHeading from "../components/page-heading.astro";
+import Layout from "../layouts/main.astro";
+---
+
+<Layout title="Acerca de CEPMA">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="Acerca de CEPMA"
+      description="Bienvenidos 🙏 Somos el Consejo Evangélico Provincial de Málaga, comprometidos con la unidad y el trabajo social en la comunidad."
+    />
+
+    <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
+
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Breve Historia</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      El Consejo Evangélico Provincial de Málaga (CEPMA) fue fundado con el objetivo de fomentar la unidad entre las iglesias evangélicas en Málaga y coordinar iniciativas sociales bajo la supervisión de Ferede.
+    </p>
+
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Experiencia y Logros
+    </h2>
+    
+
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Conectemos</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      Si deseas estar al tanto de nuestras actividades, síguenos en <a
+        href="https://twitter.com/cepma"
+        target="_blank"
+        class="text-indigo-600 underline">Twitter</a
+      >, o envíanos un <a href="mailto:contacto@cepma.org" class="text-indigo-600 underline"
+        >correo electrónico</a
+      > y nos pondremos en contacto contigo.
+    </p>
+  </section>
+</Layout>
